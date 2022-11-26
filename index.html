@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="login_center">
+        <div class="login_body">
+            <h1>Login</h1>
+            <label for="name">Username:</label><br>
+            <input type="text" id="name" name="name" class="username" placeholder="Type your username"><br><br>
+            <label for="name">Username:</label><br>
+            <input type="password" id="password" name="password" class="password" placeholder="Type your password"><br><br>
+            <input type="checkbox" onclick="showPassword()"><a class="check_button">Show password</a>
+            <a class="forgot_button" href="">Forgot password?</a><br><br><br>
+            <input type="submit" value="Login" class="login_button">
+        </div>
+    </div>
+
+    <script>
+        function showPassword() {
+            let x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+</body>
