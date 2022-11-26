@@ -3,6 +3,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     margin: 0px;
+    font-family: Verdana;
 }
 
 .login_center {
@@ -22,7 +23,6 @@ body {
 }
 
 .login_body h1 {
-    font-family: Verdana;
     font-weight: bold;
     display: flex;
     justify-content: center;
